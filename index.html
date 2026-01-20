@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FFF8EE;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: relative;
+    padding: 25px 25px;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    padding: 90px 8%;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.hero-text small {
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    margin: 10px 0;
+}
+
+.hero-text h1 span {
+    color: #b59df0;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #7da7c7;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.06);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: rgba(181, 157, 240, 0.6);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: rgba(181, 157, 240, 0.35);
+    border-radius: 50%;
+    top: 25px;
+    left: 25px;
+    z-index: 0;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skill</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <small>Available for learning & building</small>
+        <h1>Hello, I’m <span><b>Aaradhya Banerjee</b></span></h1>
+        <h2>Future Web & App Developer</h2>
+
+        <div class="tags">
+            <div class="tag"><b>HTML / CSS</b></div>
+            <div class="tag"><b>Python</b></div>
+            <div class="tag"><b>C / C++</b></div>
+            <div class="tag">Web Development</div>
+            <div class="tag">App Development</div>
+            <div class="tag">A bit of <b>editing</b></div>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="contact.html">Get in Touch</a>
+            <a href="skill.html">View Skills</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="avt.jpeg" alt="Profile Image">
+    </div>
+</section>
+
+</body>
+</html>

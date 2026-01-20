@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills Roadmap</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 40px 0;
+    background: #FFF8EE;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #4a6b57;
+    letter-spacing: 2px;
+}
+.roadmap {
+    position: relative;
+    width: 720px;
+    margin: auto;
+}
+.roadmap::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #b9e4c9;
+}
+.step {
+    position: relative;
+    width: 100%;
+    margin-bottom: 65px;
+}
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    background: #b9e4c9;
+    border-radius: 50%;
+    z-index: 2;
+}
+.box {
+    width: 300px;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.step.left .box {
+    position: relative;
+    left: calc(50% - 300px - 40px);
+}
+
+.step.right .box {
+    position: relative;
+    left: calc(50% + 40px);
+}
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.22);
+}
+.step:nth-child(1) .box { background: rgba(216, 201, 255, 0.45); }
+.step:nth-child(2) .box { background: rgba(255, 214, 226, 0.45); }
+.step:nth-child(3) .box { background: rgba(210, 242, 219, 0.45); }
+.step:nth-child(4) .box { background: rgba(255, 221, 221, 0.45); }
+.step:nth-child(5) .box { background: rgba(225, 215, 245, 0.45); }
+.step:nth-child(6) .box { background: rgba(205, 235, 240, 0.45); }
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background: #6b8f71;
+    transform: rotate(45deg);
+    opacity: 0.8;
+}
+.page-nav {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.page-nav a {
+    pointer-events: auto;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: rgba(181, 157, 240, 0.6);
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-nav a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: rgba(181, 157, 240, 0.85);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Skills</h1>
+
+<div class="roadmap">
+
+    <div class="step left">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li><b>technically and practically</b> good</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li>basics of using codes to build a program</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step left">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li><b>python</b></li>
+                <li><b>c / c++</b></li>
+                <li><b>html / css</b></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li>university student</li>
+                <li>fluent english spoken</li>
+                <li>wanna be developer</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step left">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li>basics of <b>editing</b></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="circle"></div>
+        <div class="box">
+            <ul>
+                <li>wanna be <b>web</b> developer</li>
+                <li>wanna be <b>app</b >developer</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="page-nav">
+    <a href="about.html">← Back</a>
+    <a href="hobby.html">Next →</a>
+</div>
+
+
+</body>
+</html>

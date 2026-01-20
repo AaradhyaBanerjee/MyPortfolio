@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8EE; 
+    color: #4b3f72;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+
+h1 {
+    font-size: 48px;
+    color: #7a5cfa; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+
+.about-box {
+    background: rgba(232, 223, 255, 0.6); 
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+.know-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 26px;
+    border-radius: 25px;
+    background: #cfe8ff;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background: #dff5ea; 
+    transform: translateY(-3px);
+}
+
+
+.more-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 15px;
+}
+
+
+#toggle:checked ~ .more-info {
+    max-height: 300px;
+}
+
+
+.more-info p {
+    background: rgba(255, 214, 224, 0.6); 
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.top-btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: rgba(181, 157, 240, 0.6);
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.top-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+</style>
+</head>
+
+<body>
+    <div class="top-buttons">
+    <a href="about.html" class="top-btn">Next</a>
+</div>
+
+
+<div class="container">
+
+    <h1>Hi, I’m Aaradhya Banerjee👋</h1>
+    <h2>A Student & Aspiring Software Engineer</h2>
+
+    <p class="description">
+        I’m a university student currently doing courses and building my skills.
+        I aspire to become a developer and software engineer, and I enjoy learning
+        new technologies step by step.
+    </p>
+
+    <div class="about-box">
+
+       
+        <input type="checkbox" id="toggle">
+
+        <label for="toggle" class="know-more-btn">
+            Know More
+        </label>
+
+        <div class="more-info">
+            <p><strong>Age:</strong> 18</p>
+            <p><strong>From:</strong> India Madhya Pradesh Indore</p>
+            <p><strong>Currently:</strong> University Student</p>
+            <p><strong>Goal:</strong> To become a Software Engineer & Developer</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8EE;
+    color: black;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #7a5cfa;
+}
+
+.contact-info p {
+    margin: 12px 0;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #7a5cfa;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #FFF8EE;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background: rgba(181, 157, 240, 0.7);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.success-message {
+    margin-top: 15px;
+    color: #7a5cfa;
+    font-weight: bold;
+    display: none;
+}
+
+#submitted:target {
+    display: block;
+}
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: black;
+}
+
+.social-icons a:hover {
+    color: #9035f8f8;
+}
+.page-nav {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.page-nav a {
+    pointer-events: auto;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: rgba(181, 157, 240, 0.6);
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-nav a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: rgba(181, 157, 240, 0.85);
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-section">
+
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+
+        <p><strong>Email: aaradhyabanerjee47@gmail.com</strong>
+            
+        </p>
+
+        <p><strong>Phone:</strong> Available upon request😊</p>
+        <p><strong>Location:</strong> Madhya Pradesh, Indore, India</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/Aaradhya baner" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AaradhyaBanerjee" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/arxdiya_baner07" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:aaradhyabanerjee47@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+            
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+
+        <form action="#submitted">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="5" placeholder="Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="submitted" class="success-message">
+            Your response submitted ✅
+        </p>
+    </div>
+
+</div>
+
+<div class="page-nav">
+    <a href="aar.html">← Back</a>
+   
+</div>
+
+</body>
+</html>
